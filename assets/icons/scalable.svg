@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="127.99999"
+   viewBox="0 0 33.866667 33.866664"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <circle
+     style="mix-blend-mode:exclusion;fill:#ff0000;stroke-width:0.0725149"
+     id="path1"
+     cx="12.30271"
+     cy="-20.171919"
+     r="11.536685"
+     transform="scale(1,-1)" />
+  <circle
+     style="mix-blend-mode:exclusion;fill:#ff6600;stroke-width:0.0725149"
+     id="path1-3-3"
+     cx="-6.0824857"
+     cy="17.551048"
+     r="11.536685"
+     transform="rotate(-60)" />
+  <circle
+     style="mix-blend-mode:exclusion;fill:#ffff00;stroke-width:0.0725149"
+     id="path1-3"
+     cx="17.022055"
+     cy="12.374209"
+     r="11.536685" />
+  <circle
+     style="mix-blend-mode:exclusion;fill:#00ff00;stroke-width:0.0725149"
+     id="path1-3-1-0"
+     cx="-1.3345438"
+     cy="-25.97002"
+     transform="matrix(0.5,-0.8660254,-0.8660254,-0.5,0,0)"
+     r="11.536685" />
+  <g
+     id="layer1"
+     style="mix-blend-mode:exclusion">
+    <circle
+       style="mix-blend-mode:exclusion;fill:#0000ff;stroke-width:0.0725149"
+       id="path1-3-1"
+       cx="21.769999"
+       cy="-20.213057"
+       r="11.536685"
+       transform="scale(1,-1)" />
+    <circle
+       style="mix-blend-mode:overlay;fill:#800080;stroke-width:0.0725149"
+       id="path1-6"
+       cx="-10.173844"
+       cy="-25.566309"
+       transform="matrix(0.5,-0.8660254,-0.8660254,-0.5,0,0)"
+       r="11.536685" />
+  </g>
+</svg>

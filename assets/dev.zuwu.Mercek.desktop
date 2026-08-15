@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+Name=Mercek
+GenericName=Color Picker
+Comment=A color picker tool
+Exec=mercek
+Terminal=false
+Icon=dev.zuwu.Mercek
+Categories=Utility;Graphics;
