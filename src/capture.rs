@@ -1,17 +1,17 @@
-use std::fs;
-use image::{DynamicImage};
+use image::{DynamicImage, ImageFormat};
+use std::process::Command;
 
-/// Loads the image in the URI to the memory then deletes it
-pub fn load_and_delete(uri: &str) -> Result<DynamicImage, Box<dyn std::error::Error>> {
-    let file_path = uri
-        .strip_prefix("file://")
-        .ok_or("URI did not have a file:// prefix")?;
 
-    // Load the image into memory using the external `image` crate
-    let img = image::open(file_path)?;
+pub fn get_active_monitor_screenshot() -> Result<DynamicImage, Box<dyn std::error::Error>> {
+    let output = Command::new("spectacle")
+        .args(["-m", "-b", "-n", "-o", "/dev/stdout"])
+        .output()?;
 
-    // Delete the temporary file
-    fs::remove_file(file_path)?;
+    if !output.status.success() {
+        let err = String::from_utf8_lossy(&output.stderr);
+        return Err(format!("Spectacle failed: {err}").into());
+    }
 
+    let img = image::load_from_memory_with_format(&output.stdout, ImageFormat::Png)?;
     Ok(img)
 }
