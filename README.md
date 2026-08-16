@@ -41,5 +41,8 @@ Selected color is copied to clipboard after clicking.
 make uninstall
 ```
 
+## Acknowledgments
+- Color name dataset sourced from [meodai/color-names](https://github.com/meodai/color-names).
+
 ## License
 Mercek is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
