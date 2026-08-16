@@ -109,8 +109,6 @@ pub fn init() {
 
         // Build the immutable KD-tree from the CIELAB points
         let tree: ImmutableKdTree<f64, 3> = (points.as_slice()).into();
-
-        let count = names.len();
         let _ = INDEX.set(ColorIndex { tree, names });
     });
 }
