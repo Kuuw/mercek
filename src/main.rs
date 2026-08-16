@@ -7,7 +7,6 @@ use crate::capture::{get_active_monitor_screenshot};
 use image::GenericImageView;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    env_logger::init();
     color_name::init();
     println!("Requesting screenshot from Spectacle...");
     let img = get_active_monitor_screenshot()?;

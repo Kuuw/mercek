@@ -6,13 +6,18 @@ edition = "2024"
 license = "MIT"
 
 [dependencies]
-image = "0.25.10"
 smithay-client-toolkit = "0.21.1"
 wayland-client = "0.31.15"
-env_logger = "0.11.11"
 tiny-skia = "0.12.0"
-log = "0.4"
 ab_glyph = "0.2.32"
 kiddo = "4"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+png = "0.18.1"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = 'abort'
+strip = true

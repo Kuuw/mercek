@@ -112,7 +112,6 @@ pub fn init() {
 
         let count = names.len();
         let _ = INDEX.set(ColorIndex { tree, names });
-        log::info!("Color-name KD-tree built with {} entries", count);
     });
 }
 
